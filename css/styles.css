@@ -1,0 +1,169 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#34495E - blue black
+#FFE66D - yellow
+#A1C6D7 - blue light
+#ffd11a - yellow dark:
+#ffffcc - light yellow
+#566573 - grey
+#CE93D8 - violet
+*/
+/* ------------------------------ Global -------------------------------- */
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+img{
+  width: 300px;
+  border-radius: 10px;
+}
+header{
+  background: #1B4F72 ;
+  color: #F7FFF7;
+  text-align: center;
+}
+
+header a{
+
+  color: pink ;
+  padding: 8px;
+  text-decoration: none;
+}
+header a:hover{
+  color: #566573;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+h2 {
+  font-size: 30px;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3{
+  margin: 0 0 10px 0;
+}
+.content-wrap{
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* ------------------------------- Projects ----------------------------- */
+.projects{
+  background: #A1C6D7;
+}
+
+.projects-link{
+  color: #8E24AA;
+  text-decoration: none;
+}
+.projects-link:hover{
+  color: #566573;
+  text-decoration: underline;
+}
+
+.button{
+  color: #F7FFF7;
+  background: #3F51B5;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover{
+  opacity: 75%;
+}
+
+.project-item{
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+#project-3{
+  border-bottom: none;
+}
+footer{
+  background: #343434;
+  color: #F7FFF7;
+  text-align: center;
+}
+
+#education{
+  background-image: url('../images/BG5.jpg');
+  color: black;
+  background-size: cover;
+  background-position: top;
+
+
+}
+
+#acomplishments{
+  background: #A1C6D7;
+}
+
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-list a{
+  padding: 10px 10px;
+  display: inline-block;
+}
+.contact-list a img{
+  width: 50px;
+  height: 50px;
+}
+.contact-list a:hover{
+  opacity: 0.5;
+}
+.acomplishments .button{
+
+}
+
+@media screen and (min-width: 750px){
+  .project-item img{
+    float: left;
+    margin-right: 20px;
+  }
+  .contact-list a{
+    padding: 10px 20px;
+  }
+  h1 {
+    font-size: 100px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 45px;
+  }
+
+}
+@media screen and (max-width: 500px){
+  .project-item img{
+    width: 85%;
+    height: 200px;
+  }
+}
